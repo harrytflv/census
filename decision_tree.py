@@ -233,10 +233,7 @@ class Forest():
 
 
 def load_dataset(dataset = DATASET):
-    if (dataset == "Census"):
-        filename = 'data/census_data/census_data.mat'
-    else:
-        filename = 'data/spam_data/spam_data.mat'
+    filename = 'data/census_data/census_data.mat'
     data = sio.loadmat(filename)
     train_data = data['training_data']
     train_labels = data['training_labels'][0]
